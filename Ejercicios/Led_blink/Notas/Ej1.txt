@@ -1,0 +1,9 @@
+Respuestas a las preguntas:
+
+a. La ventaja de un array de tiempos es la versatilidad a la hora de conmutar de frecuencias. Para modificar este vector de cualquier forma simplemente se modifican los valores seteados.
+
+b. En mi caso particular, utilicé interrupciones mediante detección de flanco. En mi caso particular no observé rebote, ya que al salir de la interrupción pasaba por el delay de 200/500 mS funcionando como un filtro digital per se.
+
+c. De no implementarse interrupciones, el mejor momento para leer el pulsador es antes de cualquier delay, ya que el mismo es bloqueante.
+
+d. Si el tiempo de encendido del led fuera mucho mayor, el retardo bloqueante empeoraría la situación. Ya que el pulsador se leería al salir del delay. Si se presiona en medio del delay no se registrará el valor del pulsador. Mejoraría mucho si el tiempo fuese mucho mejor

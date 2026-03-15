@@ -32,19 +32,11 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdint.h>
-#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-typedef uint32_t tick_t;
 
-typedef bool bool_t;
-typedef struct{
-	tick_t startTime;
-	tick_t duration;
-	bool_t running;
-}delay_t;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

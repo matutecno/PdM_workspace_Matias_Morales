@@ -19,4 +19,6 @@
     
 - ¿Cuán sencillo resulta en su implementación cambiar el patrón de tiempos de parpadeo?
 
-	No es tan sensillo, ya que hay que modificar varias lineas de código que estan hardcoreadas. Probablemente tendría que haber definido una variable que establezca los estados (en este caso 1000 mS, 500 y 100, serían 3 estados). Mejora pendiente próxima versión.
+	No es tan sensillo, ya que hay que modificar varias lineas de código que estan hardcoreadas. Probablemente tendría que haber definido una variable que establezca los estados (en este caso 1000 mS, 200 y 100, serían 3 estados). Mejora pendiente próxima versión.
+
+15/06/2026. Se crea biblioteca del.h y del.c, se define STATES y STATES_X para setear los valores y poder agregar estados y  tiempos

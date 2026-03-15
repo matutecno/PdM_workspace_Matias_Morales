@@ -1,0 +1,22 @@
+- ¿Se pueden cambiar los tiempos de encendido de cada led fácilmente en un solo lugar del código o éstos están hardcodeados?
+	
+	Es tan facil como modificar los valores de un arreglo unidimensional.    
+
+- ¿Qué bibliotecas estándar se debieron agregar para que el código compile? Si las funcionalidades crecieran, habría que pensar cuál sería el mejor lugar para incluir esas bibliotecas y algunos typedefs que se usan en el ejercicio.
+    
+	#include <stdint.h>
+	#include <stdbool.h>
+
+	Una de las mejores que intentaré explicar en la próxima versión, es crear un archivo delay.h y delay.c e implementar todo en esta librería, facilitando la portabilidad de código a futuro. 
+
+- ¿Es adecuado el control de los parámetros pasados por el usuario que se hace en las funciones implementadas? ¿Se controla que sean valores válidos? ¿Se controla que estén dentro de los rangos correctos?
+
+	En la versión actual no se hacen validaciones de datos. Mejora pendiente para la próxima versión.
+    
+- ¿Cuán reutilizable es el código implementado?
+	
+	Implementando las bibliotecas podemos portar y reutilizar este código. Mejora pendiente para la próxima versión.
+    
+- ¿Cuán sencillo resulta en su implementación cambiar el patrón de tiempos de parpadeo?
+
+	No es tan sensillo, ya que hay que modificar varias lineas de código que estan hardcoreadas. Probablemente tendría que haber definido una variable que establezca los estados (en este caso 1000 mS, 500 y 100, serían 3 estados). Mejora pendiente próxima versión.

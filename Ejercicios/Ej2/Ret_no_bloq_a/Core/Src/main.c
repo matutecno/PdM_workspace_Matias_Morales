@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "del.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,6 +34,11 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define LED_GREEN GPIO_PIN_5
+#define STATES 1
+#define ST_A 100
+//#define ST_B 200
+//#define ST_C 100
+#define Q_BLINKS 5
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,24 +55,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void delayInit( delay_t * delay, tick_t duration ){
-	delay->duration = duration;
-	delay->running = false;
-	delay->startTime = HAL_GetTick();
-};
 
-bool_t delayRead( delay_t * delay ){
-
-	uint32_t aux = HAL_GetTick() - delay->startTime;
-	if(aux >= delay->duration)
-		delay->running = true;
-
-	return delay->running;
-};
-
-void delayWrite( delay_t * delay, tick_t duration ){
-	delay->duration = duration;
-};
 
 /* USER CODE END PFP */
 
@@ -84,8 +72,9 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	uint32_t del_ = 500;
+	uint32_t del_[STATES]={ST_A};
 	delay_t del;
+	uint32_t i = 0, cont = 0;
 
   /* USER CODE END 1 */
 
@@ -114,20 +103,26 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  delayInit(&del, del_[i]);
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  delayInit(&del, del_);
-
-	  while(1){
-		  if(delayRead(&del)){
-			  HAL_GPIO_TogglePin(GPIOA, LED_GREEN);
-			  delayInit(&del, del_);
-		  }
+	  if(delayRead(&del)){
+		  HAL_GPIO_TogglePin(GPIOA, LED_GREEN);
+		  delayInit(&del, del_[i]);
+		  cont++;
+	  }
+	  if(cont == 2 * Q_BLINKS){
+		  cont = 0;
+		  i++;
+		  if(i > STATES - 1)
+			  i = 0;
 	  }
   }
+
+
   /* USER CODE END 3 */
 }
 

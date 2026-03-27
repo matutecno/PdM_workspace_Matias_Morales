@@ -8,7 +8,7 @@
 #ifndef JSNSR04T_INC_JSNSR04T_H_
 #define JSNSR04T_INC_JSNSR04T_H_
 
-#include "jsnsr04t_port.h"
+#include <project_port.h>
 #include "main.h"
 #include <stdint.h>
 #include <stdbool.h>

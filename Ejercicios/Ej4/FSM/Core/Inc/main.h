@@ -65,6 +65,10 @@ void Error_Handler(void);
 #define SWO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+typedef enum{
+	STATE_HF,			//Estado baja frecuencia
+	STATE_LF,			//Estado alta frecuencia
+}st_t;
 
 /* USER CODE END Private defines */
 

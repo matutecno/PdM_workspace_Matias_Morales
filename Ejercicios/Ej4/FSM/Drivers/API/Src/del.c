@@ -19,8 +19,3 @@ void delayWrite( delay_t * delay, tick_t duration ){
 		delayInit(delay, duration);
 	}
 };
-
-bool_t delayIsRunning(delay_t * delay){
-	delayRead(delay);
-	return delay->running;
-};

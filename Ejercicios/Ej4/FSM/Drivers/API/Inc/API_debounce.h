@@ -5,8 +5,8 @@
  *      Author: Matías Morales Gariglio
  */
 
-#ifndef API_INC_FSM_H_
-#define API_INC_FSM_H_
+#ifndef API_INC_API_DEBOUNCE_H_
+#define API_INC_API_DEBOUNCE_H_
 
 #include "del.h"
 
@@ -19,6 +19,7 @@ void buttonPressed();			// debe encender el LED
 void buttonReleased();			// debe apagar el LED
 bool_t readPush();
 void debugPush();
+bool_t retStat();
 
 //El tiempo de anti-rebote debe ser de 40 ms con un retardo no bloqueante como los implementados en la práctica 3.
 
@@ -32,4 +33,4 @@ typedef enum{
 }debounceState_t;
 
 
-#endif /* API_INC_FSM_H_ */
+#endif /* API_INC_API_DEBOUNCE_H_ */

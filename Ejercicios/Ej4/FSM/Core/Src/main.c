@@ -17,13 +17,14 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <API_debounce.h>
 #include "main.h"
 #include "gpio.h"
+#include "blink.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "del.h"
-#include "fsm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,6 +36,10 @@
 /* USER CODE BEGIN PD */
 #define LED_GREEN 		GPIO_PIN_5
 #define LED_GREEN_PORT 	GPIOA
+#define PER_A 100			//Frecuencia parpadeo A
+#define PER_B 500			//Frecuencia parpadeo B
+#define TIME_PUSH 300		//Tiempo de espera nueva lectura push
+
 
 /* USER CODE END PD */
 
@@ -59,6 +64,8 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
+delay_t delay;
 /* USER CODE END 0 */
 
 /**
@@ -78,6 +85,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  debounceFSM_init();
 
   /* USER CODE END Init */
 
@@ -96,29 +104,32 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  debounceFSM_init();
+  st_t state = STATE_LF;			//Sistema inicia en baja frecuencia
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-/*	  if(!(delayRead(&del))){
-		  HAL_GPIO_TogglePin(GPIOA, LED_GREEN);
-		  cont++;
-	  }
-	  if(cont >= 2 * Q_BLINKS){
-		  cont = 0;
-		  i++;
-		  if(i > STATES - 1)
-			  i = 0;
-	  }
-	  delayWrite(&del, del_[i]);
-	  HAL_GPIO_WritePin(LED_GREEN_PORT, LED_GREEN, HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13));
-
-*/
 
 	  debounceFSM_update();
+	  switch(state){
+	  	  case STATE_LF:{
+	  		blink(PER_A);			//Parpadeo led Freq A
+	  		if(retStat() && ! delayRead(&delay) ){			//Si se presionó el pulsador, y luego de 300 mS
+	  			state = STATE_HF;							//Cambio de estado a alta frecuencia
+	  			delayWrite(&delay, TIME_PUSH);				//y reseteo el delay del push
+	  		};
+
+	  	  }; break;
+	  	  case STATE_HF:{
+	  		blink(PER_B);			//Parpadeo led Freq B
+	  		if(retStat() && ! delayRead(&delay) ){
+	  			state = STATE_LF;
+	  			delayWrite(&delay, TIME_PUSH);
+	  		}
+	  	  }; break;
+  	  }
 	  //debug();
   }
 

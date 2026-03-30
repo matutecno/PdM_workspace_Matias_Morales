@@ -7,11 +7,9 @@ void delayInit( delay_t * delay, tick_t duration ){
 };
 
 bool_t delayRead( delay_t * delay ){
-
 	uint32_t aux = HAL_GetTick() - delay->startTime;
 	if(aux >= delay->duration)
 		delay->running = false;
-
 	return delay->running;
 };
 
@@ -23,5 +21,6 @@ void delayWrite( delay_t * delay, tick_t duration ){
 };
 
 bool_t delayIsRunning(delay_t * delay){
+	delayRead(delay);
 	return delay->running;
 };

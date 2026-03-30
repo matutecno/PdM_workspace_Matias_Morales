@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "del.h"
+#include "fsm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,7 +35,7 @@
 /* USER CODE BEGIN PD */
 #define LED_GREEN 		GPIO_PIN_5
 #define LED_GREEN_PORT 	GPIOA
-#define HOLDING_TIME 	40
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -42,7 +43,7 @@
 
 /* USER CODE END PM */
 
-/* Private variables ---------------------------------------------------------*/
+/* Private variables ---------------------------------------delay------------------*/
 
 /* USER CODE BEGIN PV */
 
@@ -68,7 +69,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	delay_t del;
 
   /* USER CODE END 1 */
 
@@ -96,6 +96,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  debounceFSM_init();
+
   while (1)
   {
     /* USER CODE END WHILE */
@@ -112,10 +114,12 @@ int main(void)
 			  i = 0;
 	  }
 	  delayWrite(&del, del_[i]);
-*/
 	  HAL_GPIO_WritePin(LED_GREEN_PORT, LED_GREEN, HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13));
 
+*/
 
+	  debounceFSM_update();
+	  //debug();
   }
 
 

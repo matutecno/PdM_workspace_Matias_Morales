@@ -55,12 +55,12 @@ Note: You must repeat step 2 for every new library module you create to avoid "N
 
 Project Directory
 
-📂 TP1 (Unit 1)
+📂 Excercise 1
 LED Blink: Basic implementation using External Interrupts (EXTI) to handle push-button inputs, avoiding CPU blocking.
 
 
 
-📂 TP2 (Unit 2)
+📂 Excercise 2
 Non-blocking Delays: Timing implementation using the HAL_GetTick() method to allow multitasking.
 
 Bonus Exercise: Found in the folder ending in _3.
@@ -70,5 +70,75 @@ Custom Driver: I developed a modular library (del.c and del.h) to encapsulate de
 Theory: Check Notes.txt within the project folder for the technical Q&A.
 
 
-📂 TP2 (Unit 3)
+📂 Exercise 3
 No comments
+
+📂 Exercise 4
+Finite machine states
+
+
+
+📂 Exercise 5
+
+Part 1: Polling UART Driver
+
+**Platform:** Nucleo-F446RE (STM32F446RE, 84 MHz)
+**IDE:** STM32CubeIDE
+**Course:** Microcontroller Programming — FIUBA
+
+## Description
+
+Implementation of a UART driver over USART2 in polling mode, without DMA or interrupts. The driver encapsulates the HAL handle and exposes a high-level API for sending and receiving strings.
+
+## Serial Port Configuration
+
+| Parameter       | Value     |
+|-----------------|-----------|
+| Instance        | USART2    |
+| Baud rate       | 9600      |
+| Data bits       | 8         |
+| Parity          | Odd       |
+| Stop bits       | 1         |
+| Flow control    | None      |
+| Oversampling    | x16       |
+| Pins            | PA2 (TX), PA3 (RX) |
+
+> The serial terminal must be configured as **9600 8-Odd-1**.
+
+## Driver Files
+
+| File | Description |
+|------|-------------|
+| `STM32CubeIDE/Drivers/API_uart.c/Src/API_uart.c` | Driver implementation |
+| `STM32CubeIDE/Drivers/API_uart.c/Inc/API_uart.h` | Public interface |
+
+## API
+
+```c
+bool uartInit(void);
+void uartSendString(uint8_t *pstring);
+void uartSendStringSize(uint8_t *pstring, uint16_t size);
+void uartReceiveStringSize(uint8_t *pstring, uint16_t size);
+```
+
+- `uartInit`: initializes USART2 and prints the port configuration to the console. Returns `1` on success, `0` on error.
+- `uartSendString`: transmits a null-terminated string.
+- `uartSendStringSize`: transmits exactly `size` bytes, one byte at a time.
+- `uartReceiveStringSize`: receives bytes until `\n` or until `size` bytes are read. Blocks until reception is complete.
+
+## Main Behavior
+
+On startup, `uartInit` prints the port configuration. The main loop then:
+1. Sends `buffer` over UART
+2. Waits 500 ms
+3. Sends `buffer2` over UART
+4. Waits 500 ms
+5. Sends `buffer3` over UART and waits to receive a string from the terminal
+6. The received string is stored in `buffer3` for the next cycle
+
+## Clock
+
+- Source: HSE 8 MHz
+- PLL: PLLM=8, PLLN=336, PLLP=DIV4 → SYSCLK = 84 MHz
+- APB1 = 42 MHz (USART2 clock source)
+- Voltage scaling: SCALE2

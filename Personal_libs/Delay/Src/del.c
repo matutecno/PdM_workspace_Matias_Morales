@@ -20,11 +20,4 @@ void delayWrite( delay_t * delay, tick_t duration ){
 	delay->duration = duration;
 };
 
-#ifdef HAL_TIM_MODULE_ENABLED
-void delayUs( TIM_HandleTypeDef *htim, uint16_t us ){
-	htim->Instance->CNT = 0;
-	HAL_TIM_Base_Start(htim);
-	while(htim->Instance->CNT < us);
-	HAL_TIM_Base_Stop(htim);
-}
-#endif
+

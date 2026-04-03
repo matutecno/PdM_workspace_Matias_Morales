@@ -8,6 +8,7 @@
 typedef uint32_t tick_t;
 
 typedef bool bool_t;
+
 typedef struct{
 	tick_t startTime;
 	tick_t duration;
@@ -17,8 +18,6 @@ typedef struct{
 void delayInit( delay_t * delay, tick_t duration );
 bool_t delayRead( delay_t * delay );
 void delayWrite( delay_t * delay, tick_t duration );
-#ifdef HAL_TIM_MODULE_ENABLED
-void delayUs( TIM_HandleTypeDef *htim, uint16_t us );
-#endif
+
 
 #endif

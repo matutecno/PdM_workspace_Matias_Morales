@@ -1,0 +1,3 @@
+Manejo shift reg:
+
+https://robots-argentina.com.ar/didactica/arduino-ampliar-cantidad-de-salidas-digitales-con-74hc595/

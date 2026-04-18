@@ -1,0 +1,105 @@
+Definición de Trabajo Final (TF)
+
+
+La materia Gestión de Proyectos de las carreras de especialización se dicta todos los bimestres. En este contexto los alumnos disponen de dos alternativas:
+
+1) Pueden definir su Trabajo Final y realizar la planificación en este bimestre.
+
+2) Pueden postergar la definición de su Trabajo Final para más adelante.
+
+
+La opción 1) les permite aprovechar para avanzar con su Trabajo Final desde el comienzo del posgrado, ya que en Gestión de Proyecto se trabaja específicamente con su TF (*) y luego en algunas de las materias del posgrado se hacen trabajos relacionados directamente con su TF. De esta forma al elegir esta opción resulta más probable poder finalizar la carrera en cinco bimestres.
+
+La opción 2) les permite concentrarse primero en avanzar con las materias del posgrado y definir más adelante cuál será su Trabajo Final, cuando ya tengan un mejor manejo de los temas del posgrado. Además, esta opción posibilita que completen su TF cuando dispongan de más tiempo, porque les quedarán menos materias para cursar. Sin embargo, al elegir esta opción y por ende postergar el comienzo del TF, resulta muy difícil completar la especialización en cinco bimestres.
+
+ (*) En el caso de estar cursando el segundo año, también trabajarán con su TF en la materia obligatoria Gestión de la Tecnología y la Innovación (GTI).
+ 
+No deben cursar Gestión de Proyectos (o GTI) hasta que tengan definido su Trabajo Final
+
+Se solicita que cursen Gestión de Proyectos (y Gestión de la Tecnología y la Información si están cursando un segundo año en @lse.posgrados) recién cuando ya tengan definido su tema de Trabajo Final del posgrado. Esto porque en Gestión de Proyectos (y GTI) se trabaja sobre la planificación de su TF. Es además muy importante que tengan en claro que no es deseable que empiecen a trabajar en "algo" antes de elaborar el plan de trabajo en Gestión de Proyectos (y GTI). En cambio, pueden considerar cursar alguna materia optativa, que bien podría ser alguna materia optativa propiamente dicha, o bien una materia obligatoria introductoria de otro posgrado que sea de su interés. (link)
+
+
+Advertencia en relación a la búsqueda de director/a
+Una vez que comiencen a cursar Gestión de Proyectos tendrán hasta la segunda semana de clase inclusive para proponer director de TF. Esto es importante porque en Gestión de Proyectos se trabaja sobre la planificación del trabajo, que debe tener el acompañamiento y la aprobación del director/a propuesto/a. Te compartimos un documento con pautas para la búsqueda de director.
+
+
+Advertencia en relación con el tiempo que demanda el Trabajo Final mientras se cursan materias
+
+Implementar el trabajo final demanda alrededor de 15 horas por semana. Por otro lado, cursar una materia insume en general 3 horas de clase por semana, más otras 3 fuera del horario de clase. Se recomienda tener esto en cuenta, porque el desarrollo del TF debería comenzar inmediatamente luego de aprobar Gestión de Proyectos.
+A modo de ejemplo, desarrollar el TF y cursar en paralelo 3 materias implicaría aproximadamente 18 horas dedicadas a las materias más 15 dedicadas al TF es decir, unas 35 horas por semana. Esto es posible en caso de tener una dedicación exclusiva para el posgrado o cuando el TF es para el actual empleo. En la mayoría de los casos esto no es viable y quizás es mejor seleccionar la opción 2).
+
+
+Advertencia en relación a los plazos para culminar la especialización
+
+Para postergar la definición del trabajo final debe tenerse en consideración el plazo predefinido para culminar la especialización (5 o 10 bimestres, según la carrera).
+Se debe tener en cuenta que se necesitan al menos 4 bimestres: uno para cursar GdP, dos para cursar los talleres de trabajo final A y B respectivamente, y al menos un bimestre luego de GdP y antes de los talleres, para desarrollar el trabajo propiamente dicho.
+Si bien existe la posibilidad de solicitar una prórroga, hay límites de tiempo que se deben respetar. Ante cualquier duda, consultar a titulos.lse@fi.uba.ar.
+
+
+Organización del Trabajo Final
+
+En este link pueden encontrar un artículo que explica cómo se organiza el Trabajo Final del posgrado desde el inicio hasta su presentación, e información detallada sobre el Programa de Vinculación, con estadísticas y datos de interés: Artículo sobre el Programa de Vinculación. Notar que el proceso indicado en la Fig.1 del artículo tuvo algunos ajustes. El proceso actual se indica en el siguiente diagrama:
+
+
+
+
+
+
+
+
+Pautas para la elección del Trabajo Final
+Los únicos requisitos que debe cumplir el proyecto que elijan como Trabajo Final de su posgrado son:
+Debe aplicar los contenidos del posgrado.
+Deben ser unas 600 horas de trabajo.
+
+Recomendamos leer la información disponible acá:
+ https://lse-posgrados.fi.uba.ar/trabajo-final 
+
+
+Existen dos ramas posibles a la hora de elegir un trabajo:
+Emprendimiento personal / Empleo actual / Vínculo previo
+Programa de vinculación (Empresas y Laboratorios) / Propuesta de @lse.posgrados
+
+Emprendimiento personal / Empleo actual / Vínculo previo
+
+El trabajo puede ser una continuación de un proyecto que ustedes hayan comenzado en algún momento o puede ser un proyecto nuevo. Puede ser algo académico o el desarrollo de un producto. Puede incluso tener un fin comercial.
+
+Lo ideal, sin embargo, es que sea un proyecto de interés para la organización o empresa en la que ustedes trabajan actualmente, ya que resolver un problema real es beneficioso para el alumno que hace el proyecto y para la organización. Y además así pueden aprovechar más horas por semana, que es lo que más les va a faltar: tiempo para trabajar tranquilos en sus proyectos. El riesgo en este caso es que si cambian de empleo es probable que deban comenzar un nuevo Trabajo Final ya que suele haber problemas de acceso a la información.
+
+Planilla para armar la propuesta
+En este link está la planilla que se debe utilizar para elaborar la propuesta de Trabajo Final en caso de optar por un emprendimiento personal o relacionado con el empleo actual o un vínculo previo.
+Parar armar la propuesta deben hacer una copia en su Google Drive (opción Archivo > Hacer una copia) y  luego editar la copia.
+
+Seguramente les sirva dar un vistazo a los siguientes ejemplos de propuestas de TF:
+- Uroflujómetro inalámbrico
+- Análisis mediante aprendizaje automático  de imágenes obtenidas por una plataforma de fenotipado vegetal
+
+Acá pueden ver decenas de trabajos terminados:
+- https://lse-posgrados.fi.uba.ar/trabajo-final/archivo-historico
+
+
+Programa de vinculación (Empresas y Laboratorios) / Propuesta de @lse.posgrados
+
+Una posibilidad interesante es elegir algún proyecto entre las propuestas de Trabajos Finales que conseguimos para ustedes: Propuestas de Trabajos Finales 2B2026 - Empresas, Laboratorios y @lse.posgrados
+
+Si les interesa la propuesta de alguna empresa o de @lse.posgrados se comunican con el contacto que figura en la propuesta.
+Ustedes se ponen de acuerdo con la empresa o docente para que les expliquen bien el proyecto que proponen y las condiciones para hacerlo (con o sin un honorario).
+Tengan presente que una misma empresa o docente puede recibir la consulta de varios de ustedes. A su vez, si ustedes quieren pueden consultar a más de una empresa o docente y luego elegir.
+
+
+¿Dudas?
+Si luego de leer todo el documento te quedan dudas, podés contactarte con los siguientes destinatarios según corresponda:
+
+Coordinación académica CEIA/MIA: coordinacion.academica.ia.lse@fi.uba.ar 
+
+Coordinación académica CESE: coordinacion.academica.se.lse@fi.uba.ar 
+
+Coordinación académica CEIoT: coordinacion.academica.iot.lse@fi.uba.ar 
+
+Coordinación académica CEM/MME: coordinacion.academica.me.lse@fi.uba.ar 
+
+Plazos y prórrogas: titulos.lse@fi.uba.ar 
+
+Otros: gestion.academica.lse@fi.uba.ar 
+
+

@@ -20,16 +20,60 @@
 \newlabel{fig:files_master}{{3}{2}{Archivos en slave}{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Archivos en común, visibles entre maestro y esclavo}}{3}{figure.4}\protected@file@percent }
 \newlabel{fig:PersonalLIbs}{{4}{3}{Archivos en común, visibles entre maestro y esclavo}{figure.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Periféricos utilizados}{3}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Escalabilidad y Visión de Futuro}{3}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Arquitectura del hardware}{3}{section.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama en bloques del sistema propuesto.}}{4}{figure.5}\protected@file@percent }
-\newlabel{fig:SPI_write}{{5}{4}{Diagrama en bloques del sistema propuesto}{figure.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Especificaciones de Software y Protocolos}{4}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Máquinas de estado}{4}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Objetivo del Trabajo Final}{4}{section.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Máquina de estados del master.}}{5}{figure.6}\protected@file@percent }
-\newlabel{fig:st_master}{{6}{5}{Máquina de estados del master}{figure.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Máquina de estados del slave.}}{5}{figure.7}\protected@file@percent }
-\newlabel{fig:st_master}{{7}{5}{Máquina de estados del slave}{figure.7}{}}
-\gdef \@abspage@last{5}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Delay}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Transceptor nRF24L01}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Características Principales}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ventajas para el Proyecto}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Sensor de Ultrasonido Impermeable JSN-SR04T}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Especificaciones Técnicas}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parámetros operativos del JSN-SR04T.}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:specs_jsnsr04}{{1}{4}{Parámetros operativos del JSN-SR04T}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Principio de Funcionamiento}{4}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Periféricos utilizados}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Interfaz SPI}{5}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Configuración hardware}{5}{subsection.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Pinout SPI y control nRF24L01+ (idéntico en ambos nodos)}}{5}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Driver nRF24L01+}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Sincronización con DMA}{6}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Funciones de acceso al bus}{6}{subsubsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Configuración del módulo nRF24L01+}{7}{subsection.6.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Registros del nRF24L01+ configurados en la inicialización}}{7}{table.3}\protected@file@percent }
+\newlabel{tab:nrf_regs}{{3}{7}{Registros del nRF24L01+ configurados en la inicialización}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Estructura del payload}{7}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Uso del SPI en cada nodo}{8}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Slave\_0 (transmisor).}{8}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Master\_0 (receptor).}{8}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}Interfaz UART}{8}{subsection.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8}Configuración hardware}{8}{subsection.6.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Pinout UART1 (idéntico en ambos nodos)}}{8}{table.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.9}Driver UART\_MX}{9}{subsection.6.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.9.1}Inicialización}{9}{subsubsection.6.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.9.2}Transmisión}{9}{subsubsection.6.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.9.3}Recepción}{10}{subsubsection.6.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.10}Uso en cada nodo}{10}{subsection.6.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Slave\_0.}{10}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Master\_0.}{10}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Arquitectura del hardware}{10}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Protecciones y adaptaciones de voltajes para el GPIO.}}{11}{figure.5}\protected@file@percent }
+\newlabel{fig:zenner}{{5}{11}{Protecciones y adaptaciones de voltajes para el GPIO}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama en bloques del sistema propuesto.}}{11}{figure.6}\protected@file@percent }
+\newlabel{fig:Bloq}{{6}{11}{Diagrama en bloques del sistema propuesto}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Interconexión entre registros de desplazamiento.}}{11}{figure.7}\protected@file@percent }
+\newlabel{fig:shift_reg}{{7}{11}{Interconexión entre registros de desplazamiento}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sistema display implementado.}}{12}{figure.8}\protected@file@percent }
+\newlabel{fig:Leds}{{8}{12}{Sistema display implementado}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Circuito Master.}}{12}{figure.9}\protected@file@percent }
+\newlabel{fig:Master}{{9}{12}{Circuito Master}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Circuito Slave.}}{12}{figure.10}\protected@file@percent }
+\newlabel{fig:Slave}{{10}{12}{Circuito Slave}{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Máquinas de estado}{13}{section.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Máquina de estados del master.}}{13}{figure.11}\protected@file@percent }
+\newlabel{fig:st_master}{{11}{13}{Máquina de estados del master}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Máquina de estados del slave.}}{13}{figure.12}\protected@file@percent }
+\newlabel{fig:st_slave}{{12}{13}{Máquina de estados del slave}{figure.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Ejemplo de variables globales privadas}{13}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Actualización FSM - Master y slave}{13}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}The power of 10 rules}{14}{section.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Ejemplos comentarios en líneas}{14}{section.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1}Escalabilidad y Visión de Futuro}{14}{subsection.12.1}\protected@file@percent }
+\gdef \@abspage@last{14}

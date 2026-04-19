@@ -1,0 +1,12 @@
+Evitar control de flujo complejo como goto y recursiones.
+Todos los bucles deben tener límites fijos.
+Evitar el uso de asignación dinámica de memoria.
+Restringir las funciones a una página impresa simple.
+Usar un mínimo de dos chequeos en tiempo de ejecución por función (assertions).  En general: pre y post condiciones.
+Restringir la visibilidad de la información al mínimo posible.
+Chequear el valor de retorno de todas las funciones non-void.
+Usar el preprocesador moderadamente.
+Limitar el uso de punteros a una sola desreferencia. 
+No usar punteros a funciones.
+Compilar con todos los warnings activos.
+

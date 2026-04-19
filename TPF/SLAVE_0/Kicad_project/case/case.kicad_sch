@@ -18266,6 +18266,16 @@
 		)
 		(uuid "c83bcd08-4fbb-4f0c-93e7-8548f0c67dc6")
 	)
+	(text "Slave"
+		(exclude_from_sim no)
+		(at 191.262 189.738 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+		)
+		(uuid "f03e75e4-3ee1-4137-a00c-b7592b71e603")
+	)
 	(label "vcc_in"
 		(at 54.61 40.64 0)
 		(effects

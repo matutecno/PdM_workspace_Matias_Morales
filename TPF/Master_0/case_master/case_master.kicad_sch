@@ -4839,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 152.4) (xy 227.33 156.21)
+			(xy 241.3 153.67) (xy 241.3 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4989,7 +4989,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 152.4) (xy 255.27 156.21)
+			(xy 269.24 153.67) (xy 269.24 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6059,7 +6059,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 152.4) (xy 240.03 156.21)
+			(xy 254 153.67) (xy 254 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6099,7 +6099,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 152.4) (xy 224.79 156.21)
+			(xy 238.76 153.67) (xy 238.76 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6449,7 +6449,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 152.4) (xy 257.81 156.21)
+			(xy 271.78 153.67) (xy 271.78 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6859,7 +6859,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 152.4) (xy 242.57 156.21)
+			(xy 256.54 153.67) (xy 256.54 157.48)
 		)
 		(stroke
 			(width 0)
@@ -20622,6 +20622,16 @@
 		)
 		(uuid "b9470ba4-2f69-41b6-a679-25a8e791157d")
 	)
+	(text "Master"
+		(exclude_from_sim no)
+		(at 192.278 189.738 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+		)
+		(uuid "d62d1e92-acd5-4467-8ed7-077d8f0a448e")
+	)
 	(text "I_buzz = 30mA"
 		(exclude_from_sim no)
 		(at 224.79 119.888 0)
@@ -20774,7 +20784,7 @@
 	)
 	(global_label "5v"
 		(shape input)
-		(at 255.27 156.21 270)
+		(at 269.24 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20784,7 +20794,7 @@
 		)
 		(uuid "1ac4b73c-c1b9-4a7e-928b-fbbe0ba5383b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.27 161.3723 90)
+			(at 269.24 162.6423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21588,7 +21598,7 @@
 	)
 	(global_label "5v"
 		(shape input)
-		(at 240.03 156.21 270)
+		(at 254 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21598,7 +21608,7 @@
 		)
 		(uuid "64657628-3b7b-4fbe-867c-47c3f122b8e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.03 161.3723 90)
+			(at 254 162.6423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21720,7 +21730,7 @@
 	)
 	(global_label "P0"
 		(shape input)
-		(at 227.33 156.21 270)
+		(at 241.3 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21730,7 +21740,7 @@
 		)
 		(uuid "6fdfc801-0c42-4db3-be20-4233808c4047")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.33 161.6747 90)
+			(at 241.3 162.9447 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22512,7 +22522,7 @@
 	)
 	(global_label "P1"
 		(shape input)
-		(at 242.57 156.21 270)
+		(at 256.54 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22522,7 +22532,7 @@
 		)
 		(uuid "c1207b36-d51b-4770-9698-4638b16caae8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 161.6747 90)
+			(at 256.54 162.9447 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22842,7 +22852,7 @@
 	)
 	(global_label "5v"
 		(shape input)
-		(at 224.79 156.21 270)
+		(at 238.76 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22852,7 +22862,7 @@
 		)
 		(uuid "d8743372-2bf7-4ae7-b39f-b41ddd9e6a19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 224.79 161.3723 90)
+			(at 238.76 162.6423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22930,7 +22940,7 @@
 	)
 	(global_label "P2"
 		(shape input)
-		(at 257.81 156.21 270)
+		(at 271.78 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22940,7 +22950,7 @@
 		)
 		(uuid "e5cbe03e-7242-4560-8bb7-d5820e3a4976")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.81 161.6747 90)
+			(at 271.78 162.9447 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25486,7 +25496,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 257.81 147.32 270)
+		(at 271.78 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25495,7 +25505,7 @@
 		(fields_autoplaced yes)
 		(uuid "66a88825-7a6e-4db2-b371-518e9044cc74")
 		(property "Reference" "J4"
-			(at 259.08 146.6849 90)
+			(at 273.05 147.9549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25504,7 +25514,7 @@
 			)
 		)
 		(property "Value" "Pul_0"
-			(at 259.08 149.2249 90)
+			(at 273.05 150.4949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25513,7 +25523,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1_1x02_P2.50mm_Vertical"
-			(at 257.81 147.32 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25522,7 +25532,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 147.32 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25531,7 +25541,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 257.81 147.32 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26228,7 +26238,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 242.57 147.32 270)
+		(at 256.54 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26237,7 +26247,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d012cdd-2d53-4784-9b80-11aee3f48b30")
 		(property "Reference" "J3"
-			(at 243.84 146.6849 90)
+			(at 257.81 147.9549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26246,7 +26256,7 @@
 			)
 		)
 		(property "Value" "Pul_0"
-			(at 243.84 149.2249 90)
+			(at 257.81 150.4949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26255,7 +26265,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1_1x02_P2.50mm_Vertical"
-			(at 242.57 147.32 0)
+			(at 256.54 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26264,7 +26274,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 242.57 147.32 0)
+			(at 256.54 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26273,7 +26283,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 242.57 147.32 0)
+			(at 256.54 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26431,7 +26441,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 227.33 147.32 270)
+		(at 241.3 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26440,7 +26450,7 @@
 		(fields_autoplaced yes)
 		(uuid "97a96e1d-e8b5-44d7-9f3e-1e46efac8fb7")
 		(property "Reference" "J2"
-			(at 228.6 146.6849 90)
+			(at 242.57 147.9549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26449,7 +26459,7 @@
 			)
 		)
 		(property "Value" "Pul_0"
-			(at 228.6 149.2249 90)
+			(at 242.57 150.4949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26458,7 +26468,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1_1x02_P2.50mm_Vertical"
-			(at 227.33 147.32 0)
+			(at 241.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26467,7 +26477,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 147.32 0)
+			(at 241.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26476,7 +26486,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 227.33 147.32 0)
+			(at 241.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)

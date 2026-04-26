@@ -8,7 +8,14 @@
 #ifndef DRIVERS_API_INC_NRF24L01_H_
 #define DRIVERS_API_INC_NRF24L01_H_
 
-#include "stm32f1xx_hal.h"
+#if defined(STM32F446xx)		//el device defined se obtiene de la info de cada proyecto.
+    #include "stm32f4xx_hal.h"
+#elif defined(STM32F103xB)
+    #include "stm32f1xx_hal.h"
+#endif
+
+
+
 #include <stdbool.h>
 #include <stdint.h>
 #include "main.h"
@@ -57,7 +64,7 @@ bool nrfIsBusy(void);
 
 typedef struct {
     uint16_t nivel;       // cm
-    uint16_t caudal;      // pulsos/seg (o L/min ×10 si convertís)
+    bool caudal;      // pulsos/seg (o L/min ×10 si convertís)
     uint16_t luminosidad; // ADC raw 12-bit
     int16_t  temperatura; // °C × 10
     uint8_t  humedad;     // %

@@ -90,7 +90,8 @@ El proyecto se centra en la creación de un nodo de telemetría remoto (Slave) e
     \label{fig:PersonalLIbs}
 \end{figure}
 
-Los archivos se acomodaron en la carpeta API, aquellos que corresponden exclusivamente tanto a maestro como a esclavo. Creé una carpeta denominada Personal\_libs para portabilidad del código. Lo que hice en ports\_master.h y ports\_slave.h es cortar lo generado en stmCubeMx (defines de puertos y similares) del main.h y colocarlo allí. Lo malo de esto es que cualquier modificación futura en stmCubeMx generará nuevamente el main.h y podría generar un conflicto entre definiciones.
+
+Los archivos se acomodaron en la carpeta API, separados entre maestro y esclavo. Creé una carpeta Personal\_libs para portabilidad del código, donde cada librería tiene su propio archivo xxx\_ports.h con los defines de pines que usa. Los archivos ports\_master.h y ports\_slave.h actúan como agregadores: incluyen los ports de cada librería y definen los pines propios de cada nodo. El main.h generado por STM32CubeMX solo incluye el ports del nodo correspondiente dentro de la zona USER CODE, que CubeMX preserva ante regeneraciones.
 
 \section{Delay}
 

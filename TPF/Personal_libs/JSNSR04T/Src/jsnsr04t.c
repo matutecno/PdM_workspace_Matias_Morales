@@ -8,6 +8,7 @@
  */
 
 #include "jsnsr04t.h"
+#include "jsnsr04_ports.h"
 
 #define MAX_V 200
 

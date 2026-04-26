@@ -6,8 +6,11 @@
  */
 
 #include "nrf24l01.h"
+#include "nrf24l01_ports.h"
+
 #define TIMEOUT 100
-   // para NRF_CE_Pin, NRF_CSN_Pin, etc.
+
+
 
 static delUs_t del_TIMEOUT;		//Para probar lo puse en modo bloqueantre
 

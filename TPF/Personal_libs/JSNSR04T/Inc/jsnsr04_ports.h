@@ -1,0 +1,19 @@
+/*
+ * jsnsr04_ports_slave.h
+ *
+ *  Created on: 26 abr 2026
+ *      Author: matute
+ */
+
+#ifndef DRIVERS_API_PERSONAL_LIBS_JSNSR04T_INC_JSNSR04_PORTS_SLAVE_H_
+#define DRIVERS_API_PERSONAL_LIBS_JSNSR04T_INC_JSNSR04_PORTS_SLAVE_H_
+
+
+
+
+	#define JSN_TRIG_Pin GPIO_PIN_1
+	#define JSN_TRIG_GPIO_Port GPIOA
+
+
+
+#endif /* DRIVERS_API_PERSONAL_LIBS_JSNSR04T_INC_JSNSR04_PORTS_SLAVE_H_ */

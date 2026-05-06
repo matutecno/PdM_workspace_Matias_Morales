@@ -105,7 +105,12 @@ Por ello utilicé otro enfoque. DWT: Data watchpoint and trace. Habilitando el b
 
 \section{Transceptor nRF24L01}
 
+\href{https://github.com/matutecno/PdM_workspace_Matias_Morales/blob/36632c7629ba2d8375b50d48365e32dbffeaf255/TPF/Personal_libs/NRF24L01/Src/nrf24l01.c}{Link libreria}.
+
 El \textbf{nRF24L01} es un transceptor monolítico de radiofrecuencia (RF) que opera en la banda ISM (\textit{Industrial, Scientific, and Medical}) de $2.4$~GHz. Diseñado por \textit{Nordic Semiconductor}, este módulo destaca por su bajísimo consumo energético y su motor de protocolos acelerado por hardware, denominado \textbf{Enhanced ShockBurst™}.
+
+
+
 
 \subsection{Características Principales}
 
@@ -127,6 +132,8 @@ El \textbf{nRF24L01} es un transceptor monolítico de radiofrecuencia (RF) que o
 
 
 \section{Sensor de Ultrasonido Impermeable JSN-SR04T}
+
+\href{https://github.com/matutecno/PdM_workspace_Matias_Morales/blob/36632c7629ba2d8375b50d48365e32dbffeaf255/TPF/Personal_libs/JSNSR04T/Src/jsnsr04t.c}{Link libreria}.
 
 El \textbf{JSN-SR04T} es un transductor ultrasónico de distancia diseñado para aplicaciones que requieren resistencia a condiciones ambientales adversas. A diferencia de los sensores piezoeléctricos convencionales, este dispositivo cuenta con un transductor estanco y un cable de extensión (típicamente de $2.5$~metros), lo que permite separar la etapa de procesamiento electrónico del punto de medición.
 
@@ -321,7 +328,9 @@ Ambos nodos del sistema —\textsc{Slave\_0} y \textsc{Master\_0}— utilizan el
   
   Adicionalmente, al finalizar \texttt{initParser()}, el Master verifica que el registro \texttt{CONFIG} del nRF valga \texttt{0x0F}; en caso contrario ejecuta \texttt{NVIC\_SystemReset()} para forzar una reinicialización completa del sistema.           
 
-\subsection{Interfaz UART}                                          
+\subsection{Interfaz UART}    
+
+\href{https://github.com/matutecno/PdM_workspace_Matias_Morales/blob/36632c7629ba2d8375b50d48365e32dbffeaf255/TPF/Personal_libs/UART_MX/Src/uart_mx.c}{Link libreria}.                                      
                                                                                 
   Ambos nodos utilizan \texttt{USART1} del STM32F103C8T6 exclusivamente como    
   canal de telemetría hacia una terminal serie en PC. El periférico opera en

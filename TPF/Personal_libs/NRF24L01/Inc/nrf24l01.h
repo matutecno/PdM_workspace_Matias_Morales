@@ -67,7 +67,7 @@ typedef struct {
     bool caudal;      // pulsos/seg (o L/min ×10 si convertís)
     uint16_t luminosidad; // ADC raw 12-bit
     int16_t  temperatura; // °C × 10
-    uint8_t  humedad;     // %
+    uint16_t  humedad;     // %%
 }payload_t;
 
 
